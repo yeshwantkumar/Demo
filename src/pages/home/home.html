@@ -4,11 +4,95 @@
       Ionic Blank
     </ion-title>
   </ion-navbar>
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="currentSegment" (ionChange)="showSegment()">
+      <ion-segment-button value="segment1">
+        Segment 1
+      </ion-segment-button>
+      <ion-segment-button value="segment2">
+        Segment 2
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding (ionScroll)="doSomething($event)">
+  <ion-slides (ionSlideDidChange)="slideChanged()">
+    <ion-slide>
+        <div>Segment 1</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+    </ion-slide>
+    <ion-slide>
+        <div>Segment 2</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+        <div>Extra stuff at the bottom</div>
+    </ion-slide>
+  </ion-slides>
 </ion-content>
